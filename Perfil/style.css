@@ -1,0 +1,457 @@
+/* Reset */
+body, h1, h2, h3, p, ul, li, a, button, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    color: #ff5a5f;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+.search-cart {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search-cart input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-cart button {
+    padding: 0.5rem;
+    background-color: #ff5a5f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.cart-icon {
+    font-size: 1.5rem;
+}
+
+/* Main Layout */
+.profile-container {
+    display: flex;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+/* Bordered Box */
+.bordered-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+/* Profile Card */
+.profile-card {
+    flex: 1;
+}
+
+.profile-details {
+    text-align: center;
+}
+
+.profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    background-color: #f9f9f9;
+    margin: 1rem 0;
+}
+
+/* Botão de Editar Perfil */
+.edit-profile-btn {
+    width: 100%;
+    padding: 0.8rem 0;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.edit-profile-btn:hover {
+    background-color: #0056b3;
+}
+
+.profile-actions {
+    margin-top: 1rem;
+}
+
+/* Profile Info */
+.profile-info {
+    flex: 2;
+}
+
+.profile-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile-info ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.profile-info ul li {
+    margin-bottom: 0.5rem;
+}
+
+.stats {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+/* Speech Bubble */
+.speech-bubble {
+    position: relative;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #f0f0f0 transparent transparent transparent;
+}
+
+/* Profiles (ONGs e Comunidades) */
+.widget-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.view-all-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9rem;
+}
+
+.profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    text-align: center;
+}
+
+.profile-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    background-color: #f9f9f9;
+}
+
+.profile-item p {
+    margin-top: 5px;
+    font-size: 0.85rem;
+    color: #333;
+}
+/* Reset styles */
+/* Main carousel container */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Tamanho máximo do carrossel */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    cursor: grab;
+    transition: transform 0.3s ease-out;
+}
+
+/* Carousel slide */
+.carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 500px; /* Altura ajustável */
+    object-fit: cover;
+    border-radius: 10px;
+}
+.logo img{
+    width: 200px;
+    height: auto;
+}
+.slider-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden; /* Oculta as imagens fora da área do slider */
+    border-radius: 8px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out; /* Animação de transição entre as imagens */
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    height: 100%;
+}
+.Home{
+    color: red;
+}
+.top-header {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+    color: #e63946;
+}
+
+.search-cart-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 30px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    flex: 1;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    height: 20px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icons img {
+    height: 30px;
+}
+
+.icons .profile {
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 17rem;
+    gap: 20px;
+}
+
+.card {
+    background-color: #124C5F;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.card h2 {
+    font-size: 1em;
+}
+
+.btn-orange {
+    background-color: #ff9f1c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: #ff9f1c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.faq {
+    background-color: #124C5F;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+.faq p {
+    margin: 20px 0;
+}
+
+.btn-white {
+    color: #023047;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-image: url(Imagens/Ellipse\ 21.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    place-items: center;
+    margin-top: 100px;
+}
+
+.about {
+    text-align: center;
+    display: flex;
+    gap: 5rem;
+    font-size: 0.9rem;
+    margin-top: 8rem;
+}
+
+.about-content {
+    max-width: 280px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.social-icons img {
+    display: inline-block;
+    margin: 4px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 4rem;
+}
+
+.partners h3 {
+    text-align: left;
+}
+
+.background-card {
+    height: 250px;
+    max-width: 350px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+
+}
+
+.Institucional,
+.links {
+    text-align: left;
+}
